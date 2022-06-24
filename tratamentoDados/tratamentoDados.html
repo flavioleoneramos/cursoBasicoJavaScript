@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tratamento de dados</title>
+
+    <script>
+        //var nome = window.prompt('Qual é o seu nome')
+        //alert('Prazer em te conhecer ' + nome)
+
+        /*var n1 = Number(window.prompt('Informe um número'))
+        var n2 = Number(window.prompt('Informe outro número'))
+        var s = n1 + n2
+        alert('A soma é ' + String(s))
+        */
+
+        /*var nome = 'Flávio'
+        var idade = 38;
+        var nota = 7.5
+        //document.write('O ' + nome + ' com idade de ' + idade + 'tirou a nota ' + nota)
+        document.write(`O aluno ${nome} com a idade de ${idade} tirou a nota ${nota}`)// Usa crase ``
+        */
+
+        /*var nome = window.prompt('qual é o seu nome?')
+        document.write(`${Nome.toUpperCase()}, o seu nome tem ${nome.length} palavras`)
+        document.write(`Nome em minusculo ${nome.toLowerCase()}`)*/
+
+        var n1 = 1500.5
+        //n1.toFixed(2)
+        //n1.toFixed(2).replace('.',',')
+        n1.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})//USD EUR
+        document.write(String(n1))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

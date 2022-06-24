@@ -1,0 +1,24 @@
+header{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: brown;
+}
+
+section{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+div#resp{
+    background-color: brown;
+    color: white;
+}
+
+footer{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: brown;
+}

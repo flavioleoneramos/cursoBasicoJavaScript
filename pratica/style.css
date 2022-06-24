@@ -1,0 +1,32 @@
+body{
+    font: normal 15pt Arial;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+section{
+    width: 100%;
+    margin: auto;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgb(24, 21, 21);
+}
+
+section div#msg{
+    width: 100%;
+    text-align: center;
+}
+
+section div#foto{
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}

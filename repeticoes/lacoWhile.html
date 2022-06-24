@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço While</title>
+</head>
+<body>
+    <div id="resp">
+
+    </div>
+    <label for="idN1">Informe o número para iniciar o contador</label><input type="number" id="idN1" name="idN1">
+    <label for="idN2">Informe o número para finalizar o contador</label><input type="number" id="idN2" name="idN2">
+    <input type="button" value="Escrever" onclick="printarTela()">
+
+    <script>
+        /*function printarTela(){
+            var r = document.getElementById('resp')
+            var n1 = document.querySelector('id#idN1')
+            var n2 = document.querySelector('id#idN2')
+            var nu1 = Number(n1)
+            var nu2 = Number(n2)
+
+            if(nu1 < nu2){
+                while(nu1 <= nu2){
+                    r.innerHTML = `Número ${nu1} </br>`
+                    nu1++
+                }
+            }else{
+                while(nu2 <= nu1){
+                    r.innerHTML = `Número ${nu2} </br>`
+                    nu2++
+                }
+            }
+        }*/
+
+        var c = 1;
+        var d = 1;
+        while(c < 10){
+            document.write('</br>' + c + '</br>')
+            c++
+        }
+
+        /*do{
+            document.write('</br>' + d + '</br>')
+            d++
+        }while(d < 10)*/
+    </script>
+</body>
+</html>

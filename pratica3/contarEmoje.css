@@ -1,0 +1,20 @@
+header{
+    text-align: center;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(172, 15, 15);
+    margin: 10px auto 10px auto;
+}
+
+section{
+    text-align: center;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(172, 15, 15);
+    margin: 10px auto 10px auto;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(172, 15, 15);
+    margin: 10px auto 10px auto;
+}

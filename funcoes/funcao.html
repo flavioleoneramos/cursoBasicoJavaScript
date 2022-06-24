@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <div id="res">
+
+    </div>
+        <h1>informe um número:</h1>
+        <input type="number" id="num" name="num">
+        <input type="button" value="Verificar" onclick="parImpar()">
+    <script>
+        function parImpar(){
+            let resp = document.querySelector('div#res')
+            let valor = document.querySelector('input#num')
+            let v = Number(valor.value)
+            if(v % 2 == 0){
+                resp.innerHTML = `Par`
+            }else{
+                resp.innerHTML = `Ímpar`
+            }
+        }
+
+        let f = function multi(v){
+            return v*2
+        }
+        let a = f(15)
+        document.write(`</br>${a}`)
+
+        function fatorial(n){
+            let fat = 1;
+            for(var c = n; n > 1; n--){
+                fat *= n
+                
+            }
+            return fat
+        }
+
+        document.write('</br>' + fatorial(5))
+
+
+        document.write(`</br>Fatorial recursivo</br>`)
+
+        function fatorialRec(n){
+            if(n == 1){
+                return 1
+            }else{
+                return n * fatorialRec(n-1)
+            }
+        }
+
+        document.write('</br>' + fatorialRec(5))
+
+
+        /*
+        O fatorial de um npumero é n! = n x (n-1)!
+        */
+    </script>
+</body>
+</html>

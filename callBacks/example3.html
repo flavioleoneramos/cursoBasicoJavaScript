@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBacks</title>
+</head>
+<body>
+    <p>Do a calculation and then display the result.</p>
+    <p id="demo"></p>
+    <script>
+        // callback é uma passagem de função via parametro
+        function myDisplayer(some){
+            document.getElementById("demo").innerHTML = some
+        }
+        function myCalculator(nun1,nun2){
+            let sum = nun1 + nun2
+            return sum
+        }
+
+        let result = myCalculator(5,5)
+        myDisplayer(result)
+    </script>
+</body>
+</html>

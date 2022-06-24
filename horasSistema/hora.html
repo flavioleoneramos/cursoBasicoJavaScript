@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegando horas no JavaScript</title>
+</head>
+<body>
+    <div id="re">
+
+    </div>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var minuto = agora.getMinutes()
+        var segundo = agora.getSeconds()
+        var resp = document.querySelector('div#re')
+        resp.innerHTML = `Hora:${hora} Minuto:${minuto} Segundo:${segundo}`
+        
+    </script>
+</body>
+</html>

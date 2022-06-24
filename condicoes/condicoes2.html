@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiçoes aninhadas</title>
+</head>
+<body>
+    <label for="idNome">Nome: </label><input type="text" id="idNome" name="nome"></br>
+    <label for="idNota1">Nota 1: </label><input type="number" id="idNota1" name="nota1"></br>
+    <label for="idNota2">nota 2: </label><input type="number" id="idNota2" name="nota2"></br>
+    <input type="button" value="Calcular Nota" onclick="calcularNota()">
+    <div id="res">
+
+    </div>
+</body>
+
+    <script>
+        function calcularNota(){
+            var nome = document.querySelector('input#idNome')
+            var nota1 = document.querySelector('input#idNota1')
+            var nota2 = document.querySelector('input#idNota2')
+            var re = document.getElementById('res')
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            var nota = n1 + n2
+            if(nota >= 7){
+                re.innerHTML = `O aluno ${nome.value} com as notas ${n1} e ${n2} passou com a nota ${nota} </br>`
+            }else if(nota < 7 && nota >=5){
+                re.innerHTML = ` O aluno ${nome.value} com as notas ${n1} e ${n2} está em recuperação com a nota ${nota}</br>`
+            }else{
+                re.innerHTML = `O aluno ${nome.value} com as notas ${n1} e ${n2} está reprovado com a nota ${nota}</br>`
+            }
+        }
+    </script>
+
+</html>

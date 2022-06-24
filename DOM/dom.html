@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+</head>
+<body>
+    <h1>Introdução ao DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aqui tem o <strong>Strong</strong></p>
+    <div id="msg">
+        clique aki
+    </div>
+    <script>
+        window.document.write('Olá mundo</br>')
+        window.document.write(window.document.URL)
+
+        /*
+        Seleção
+        
+        Por marca getElementByTagName()*/
+
+        /*var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var corpo = window.document.body
+        document.write('</br>' + p1.innerText)
+        document.write('</br>' + p2.innerText)
+        document.write('</br>' + p2.innerHTML)
+        p1.style.color = 'red'
+        corpo.style.background = 'green'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'blue'
+        d.innerText = 'Estou mudando'*/
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'yellow'
+    </script>
+</body>
+</html>

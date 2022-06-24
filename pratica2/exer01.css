@@ -1,0 +1,21 @@
+header{
+    width: 100%;
+    background-color: bisque;
+    margin: auto;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    background-color: rgb(122, 80, 28);
+    margin: auto;
+    text-align: center;
+    padding: 20px;;
+}
+
+footer{
+    width: 100%;
+    background-color: bisque;
+    margin: auto;
+    text-align: center;
+}

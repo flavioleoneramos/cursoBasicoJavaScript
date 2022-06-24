@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço For</title>
+</head>
+<body>
+    <div id="resp">
+
+    </div>
+    <label for="numero">Informe o número para iniciar o contador</label><input type="number" id="numero" name="idN1">
+    <input type="button" value="Escrever" onclick="printarTela()">
+
+    <script>
+        
+            function printarTela(){
+                var r = document.getElementById('resp')
+                var n1 = document.querySelector('input#numero')
+                var n = Number(n1.value)
+                if(n < 10){
+                    for(n; n < 10; n++){
+                        r.innerHTML = `</br> ${n}`
+                    }
+                }else{
+                    for(n; n > 1; n--){
+                        r.innerHTML = `</br> ${n}`
+                    }
+                }
+            }
+        
+        
+
+
+    </script>
+</body>
+</html>

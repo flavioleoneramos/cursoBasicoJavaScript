@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+</head>
+<body>
+    <h1>Vetores</h1>
+    
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        var r = document.querySelector('div#resultado')
+        var vetorNumero = [3,5,8,1,2,0,4,56,1456]
+        var vetorString = ['flavio','isac','sonia','celia','stela']
+        //var n = 0;
+        //var s = 0;
+        for(var n = 0; n < vetorNumero.length; n++){
+            /*if(n == 0){
+                r.innerHTML = `<h2>Mostrando vetores de números</h2></br>`
+            }*/
+            document.write(`${vetorNumero[n]} </br>`)
+        }
+
+        for(var s = 0; s < vetorString.length;s++){
+            /*if(s == 0){
+                r.innerHTML = `<h2>Mostrando vetores de string</h2>`
+            }*/
+            document.write(`${vetorString[s]} </br>`)
+        }
+        var nu = vetorNumero.indexOf(2)
+        var st = vetorString.indexOf(2)
+        document.write(`${nu}</br>`)
+        document.write(`${st}</br>`)
+        document.write(`${vetorString[2]}</br>`)
+    </script>
+</body>
+</html>
